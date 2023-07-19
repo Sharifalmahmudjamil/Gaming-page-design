@@ -8,8 +8,12 @@ nav, .right-side,.ab{
 .ab{
     list-style: none;
 }
+.ab a{
+    /* list-style: none; */
+    text-decoration: none;
+}
 nav{
-    width: 1355px;
+    width: 1810px;
     height: 90px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -139,12 +143,95 @@ nav{
 
 }
 
+/* second sections styles */
+.second-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.we{
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.unleash{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+.our{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 187.5% */
+}
+.pub{
+    text-align: right;
+    padding-right: 100px;
+}
+/* third sections styles */
+.card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    /* padding: 40px 30px; */
+    width: 400px;
+    height: 300px;
+}
+
+.card-caontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.online{
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.funny{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.collection{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
 /* responsive styles */
 @media screen and (max-width:576px){
     .nav-bar{
         flex-direction: column;
         height: auto;
-        width: auto;
+        width: 400px;
         padding-top: 50px;
         margin-right: 100px;
     }
@@ -154,7 +241,7 @@ nav{
     }
     .banner-container{
         height: 600px;
-        width: 300px;
+        width: 400px;
         
         
     }
@@ -164,5 +251,24 @@ nav{
         width: 300px;
         height: 300px;
         
+    }
+    .second-sec{
+        flex-direction: column;
+    }
+    .image-ban img{
+        height: auto;
+        width: 300px;
+    }
+    .pub{
+        /* padding-right: 100px; */
+        text-align: center;
+    }
+    .card-caontainer{
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
+    .collection{
+        font-size: 20px;
     }
 }
