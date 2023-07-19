@@ -317,6 +317,76 @@ nav{
     .hover-button:hover {
         background-color: #0056b3;
     }
+/* footer sections */
+footer{
+    width: 1600px;
+height: 636px;
+flex-shrink: 0;
+background: #0B0223;
+}
+footer .footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.last{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.support{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.f-pragraph{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.icon>ul {
+    display: flex;
+    justify-content:center;
+    gap: 60px;
+    margin-top: 60px;
+}
+#face{
+    width: 90px;
+    height: 60px;
+    flex-shrink: 0;
+    color: white;
+}
+.foot-p{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.terms{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.play-1{
+   
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 /* responsive styles */
 @media screen and (max-width:576px){
@@ -372,4 +442,8 @@ nav{
         width: 500px;
         margin-left: -30px;
 }
+footer .footer-img{
+    flex-direction: column;
+}
+
 }
